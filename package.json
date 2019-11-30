@@ -10,10 +10,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.26.7"
-  },
+  "devDependencies": {},
   "dependencies": {
+    "browser-sync": "^2.26.7",
     "autoprefixer": "^9.7.2",
     "gulp": "^3.8.10",
     "gulp-postcss": "^8.0.0",
