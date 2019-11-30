@@ -1,5 +1,5 @@
 const gulp = require("gulp");
-const browserSync = require("browser-sync").create();
+// const browserSync = require("browser-sync").create();
 const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
@@ -10,8 +10,8 @@ gulp.task("css", () => {
     .src(["node_modules/bootstrap/scss/bootstrap.scss", "src/scss/*.scss"])
     .pipe(sass())
     .pipe(postcss(plugins))
-    .pipe(gulp.dest("src/css"))
-    .pipe(browserSync.stream());
+    .pipe(gulp.dest("src/css"));
+  //.pipe(browserSync.stream());
 });
 
 gulp.task("js", () => {
@@ -21,10 +21,12 @@ gulp.task("js", () => {
       "node_modules/jquery/dist/jquery.min.js",
       "node_modules/popper.js/dist/umd/popper.min.js"
     ])
-    .pipe(gulp.dest("src/js"))
-    .pipe(browserSync.stream());
+    .pipe(gulp.dest("src/js"));
+  //.pipe(browserSync.stream());
 });
 
+/***** for dev mode *******
+ *  
 gulp.task("serve", ["css"], () => {
   browserSync.init({
     server: "./src",
@@ -37,5 +39,6 @@ gulp.task("serve", ["css"], () => {
   );
   gulp.watch("src/*.html").on("change", browserSync.reload);
 });
+/*****************/
 
-gulp.task("default", ["js", "serve"]);
+gulp.task("default", ["js", "css"]);
