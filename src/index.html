@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <title>Test task</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link 
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link 
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"
+    />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="/js/index.js"></script>
+
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=f5d22eac-0704-426d-a8bf-006b4f24be6e&lang=en_US"
+      type="text/javascript"
+    ></script>
+  </head>
+
+  <body>
+    <div id="toTop"><i class="fas fa-chevron-up"></i></div>
+
+    <header class="menu-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-5 col-sm-12">
+            <a class="logo d-flex align-items-center justify-content-start" href="#">
+              <img src="img/b-logo.png" />
+              <div class="d-flex flex-column flex-justify-center logo-text">
+                <span class="logo-top-text">Bla Bla</span>
+                <span class="logo-bottom-text">One Page Flat Template</span>
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-5 col-sm-12 ml-auto align-self-stretch d-flex justify-content-center"
+          >
+            <nav class="align-self-center">
+              <ul class="menu d-flex">
+                <li class="nav__item">
+                  <a href="#">Home</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#">Portfolio</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#">About</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <header class="header">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-8">
+            <h1 class="header__h1 font-weight-light">
+              We Build <span class="font-weight-bold">Brand</span>
+            </h1>
+            <p class="header__text font-weight-light">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat volutpat.
+            </p>
+            <button class="header__button font-weight-bold">Learn more</button>
+            <i class="fas fa-chevron-circle-down header__icon"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-6">
+            <h1 class="portfolio__h1">Portfolio</h1>
+            <p class="portfolio__text">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-6 d-flex justify-content-center portfolio__nav" id="portfolio">
+            <button type="button" class="portfolio__button portfolio__button_active" data-filter="all">All</button>
+            <button type="button" class="portfolio__button" data-filter=".web-design">Web design</button>
+            <button type="button" class="portfolio__button" data-filter=".graphic-design">Graphic design</button>
+            <button type="button" class="portfolio__button" data-filter=".flat-design">Flat design</button>
+          </div>
+        </div>
+        <div class="row portfolio__logos">
+          <div class="portfolio_logo col-lg-3 col-md-4 col-sm-6 mix graphic-design">
+            <img class="portfolio_logo_image" src="img/img-1.png" alt="" />
+            <div class="portfolio_logo_background">
+              <i class="fas fa-search portfolio__search"></i>
+            </div>
+          </div>
+          <div class="portfolio_logo col-lg-3 col-md-4 col-sm-6 mix web-design">
+            <img class="portfolio_logo_image" src="img/img-2.png" alt="" />
+            <div class="portfolio_logo_background">
+              <i class="fas fa-search portfolio__search"></i>
+            </div>
+          </div>
+          <div class="portfolio_logo col-lg-3 col-md-4 col-sm-6 mix graphic-design">
+            <img class="portfolio_logo_image" src="img/img-3.png" alt="" />
+            <div class="portfolio_logo_background">
+              <i class="fas fa-search portfolio__search"></i>
+            </div>
+          </div>
+          <div class="portfolio_logo col-lg-3 col-md-4 col-sm-6 mix graphic-design">
+            <img class="portfolio_logo_image" src="img/img-4.png" alt="" />
+            <div class="portfolio_logo_background">
+              <i class="fas fa-search portfolio__search"></i>
+            </div>
+          </div>
+          <div class="portfolio_logo col-lg-3 col-md-4 col-sm-6 mix flat-design">
+            <img class="portfolio_logo_image" src="img/img-5.png" alt="" />
+            <div class="portfolio_logo_background">
+              <i class="fas fa-search portfolio__search"></i>
+            </div>
+          </div>
+          <div class="portfolio_logo col-lg-3 col-md-4 col-sm-6 mix flat-design">
+            <img class="portfolio_logo_image" src="img/img-6.png" alt="" />
+            <div class="portfolio_logo_background">
+              <i class="fas fa-search portfolio__search"></i>
+            </div>
+          </div>
+          <div class="portfolio_logo col-lg-3 col-md-4 col-sm-6 mix web-design">
+            <img class="portfolio_logo_image" src="img/img-2.png" alt="" />
+            <div class="portfolio_logo_background">
+              <i class="fas fa-search portfolio__search"></i>
+            </div>
+          </div>
+          <div class="portfolio_logo col-lg-3 col-md-4 col-sm-6 mix flat-design">
+            <img class="portfolio_logo_image" src="img/img-1.png" alt="" />
+            <div class="portfolio_logo_background">
+              <i class="fas fa-search portfolio__search"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-5">
+            <h1 class="about__h1">About Us</h1>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center about__cards owl-carousel owl-theme">
+          
+            <div class="about_card">
+              <div class="about_card_image">
+                <img src="img/ava-1.png" alt="" />
+                <div class="about_card_links d-flex">
+                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-google"></i>
+                  <i class="fab fa-dribbble"></i>
+                </div>
+              </div>
+              <h1 class="about_card_name">Melannie Doe</h1>
+              <p class="about_card_title">Project Manager</p>
+              <p class="about_card_text">
+                Ut wisi enim ad minim veniam, quis nostrud exerci tation
+              </p>
+            </div>
+
+            <div class="about_card">
+              <div class="about_card_image">
+                <img src="img/ava-2.png" alt="" />
+                <div class="about_card_links d-flex">
+                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-google"></i>
+                  <i class="fab fa-dribbble"></i>
+                </div>
+              </div>
+              <h1 class="about_card_name">Jhonnie Doe</h1>
+              <p class="about_card_title">Graphic Designer</p>
+              <p class="about_card_text">
+                Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                consequat.
+              </p>
+            </div>
+
+            <div class="about_card">
+              <div class="about_card_image">
+                <img src="img/ava-3.png" alt="" />
+                <div class="about_card_links d-flex">
+                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-google"></i>
+                  <i class="fab fa-dribbble"></i>
+                </div>
+              </div>
+              <h1 class="about_card_name">Daniel Doe</h1>
+              <p class="about_card_title">Web Designer</p>
+              <p class="about_card_text">
+                Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h1 class="contact__h1">Contact Us</h1>
+            <p class="contact__text">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <form class="contact__form" action="submit">
+              <div class="row align-items-center flex-nowrap">
+                <input
+                  class="contact__form_name"
+                  type="text"
+                  placeholder="Your name"
+                />
+                <input
+                  class="contact__form_email"
+                  type="text"
+                  placeholder="Your email"
+                />
+              </div>
+              <div class="row">
+                <textarea
+                  class="contact__form_textarea"
+                  name=""
+                  id=""
+                  rows="8"
+                  placeholder="Your message"
+                ></textarea>
+              </div>
+              <div class="row justify-content-end">
+                <button class="contact__form_button">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6">
+            <div class="row map_area">
+              <p class="contact__address">
+                <i class="fas fa-map-marker-alt"></i>
+                Bla Bla Company 125009 Moscow, Red Square 1
+              </p>
+              <div id="map"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <p class="footer__text">
+            © Copyright 2016 Bla Bla Studio | One Page Flat Template
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
